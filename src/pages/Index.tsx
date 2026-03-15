@@ -128,34 +128,61 @@ const Index = () => {
         padding: "0 5%",
       }}>
 
-        {/* ВШЛПП badge */}
+        {/* Logos row */}
         <div style={{
-          display: "flex", alignItems: "center", gap: "12px",
+          display: "flex", alignItems: "center", gap: "clamp(20px, 5vw, 60px)",
           marginBottom: "2.5vh",
           animation: "fadeSlideDown 1s ease-out both",
         }}>
-          <div style={{
-            width: "48px", height: "48px",
-            background: "linear-gradient(135deg, #6366f1, #a855f7)",
-            borderRadius: "12px",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: "0 0 24px rgba(99,102,241,0.5)",
-            fontSize: "20px", fontWeight: 900, color: "#fff",
-            fontFamily: "'Bebas Neue', sans-serif",
-            letterSpacing: "0.05em",
-          }}>
-            В
+          {/* ВШЛПП logo */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+            <div style={{
+              width: "clamp(56px, 7vw, 90px)", height: "clamp(56px, 7vw, 90px)",
+              borderRadius: "50%",
+              background: "rgba(255,255,255,0.07)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(129,140,248,0.35)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              boxShadow: "0 0 28px rgba(99,102,241,0.3)",
+              overflow: "hidden", padding: "6px",
+            }}>
+              <img src="https://cdn.poehali.dev/projects/6edd627a-69e9-4455-b79c-9c9a7c332d16/bucket/fe65dda8-2f4a-40d2-8417-c431110fc61b.png"
+                alt="ВШЛПП" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            </div>
+            <span style={{
+              fontSize: "clamp(8px, 0.9vw, 12px)",
+              fontFamily: "'Oswald', sans-serif", fontWeight: 300,
+              letterSpacing: "0.35em", color: "rgba(199,210,254,0.65)",
+              textTransform: "uppercase",
+            }}>ВШЛПП</span>
           </div>
-          <span style={{
-            fontSize: "clamp(12px, 1.5vw, 18px)",
-            fontFamily: "'Oswald', sans-serif",
-            fontWeight: 300,
-            letterSpacing: "0.4em",
-            color: "rgba(199,210,254,0.8)",
-            textTransform: "uppercase",
-          }}>
-            ВШЛПП
-          </span>
+
+          {/* Divider */}
+          <div style={{ width: "1px", height: "clamp(50px, 6vw, 75px)", background: "linear-gradient(180deg, transparent, rgba(129,140,248,0.45), transparent)" }} />
+
+          {/* Переводческий факультет logo */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "8px" }}>
+            <div style={{
+              width: "clamp(56px, 7vw, 90px)", height: "clamp(56px, 7vw, 90px)",
+              borderRadius: "50%",
+              background: "rgba(255,255,255,0.07)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(6,182,212,0.35)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              boxShadow: "0 0 28px rgba(6,182,212,0.25)",
+              overflow: "hidden", padding: "4px",
+            }}>
+              <img src="https://cdn.poehali.dev/projects/6edd627a-69e9-4455-b79c-9c9a7c332d16/bucket/26103aed-8059-40ab-a560-36c1c562154c.png"
+                alt="Переводческий факультет" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            </div>
+            <span style={{
+              fontSize: "clamp(8px, 0.9vw, 12px)",
+              fontFamily: "'Oswald', sans-serif", fontWeight: 300,
+              letterSpacing: "0.2em", color: "rgba(199,210,254,0.65)",
+              textTransform: "uppercase", textAlign: "center",
+              maxWidth: "clamp(70px, 8vw, 110px)", lineHeight: 1.3,
+            }}>ПЕР. ФАКУЛЬТЕТ</span>
+          </div>
         </div>
 
         {/* SOUND CHECK */}
@@ -207,20 +234,6 @@ const Index = () => {
           </span>
           <div style={{ height: "1px", width: "80px", background: "linear-gradient(90deg, rgba(129,140,248,0.6), transparent)" }} />
         </div>
-
-        {/* Subtitle */}
-        <p style={{
-          fontFamily: "'Montserrat', sans-serif",
-          fontSize: "clamp(11px, 1.4vw, 18px)",
-          fontWeight: 300,
-          letterSpacing: "0.5em",
-          color: "rgba(199,210,254,0.6)",
-          textTransform: "uppercase",
-          margin: "0 0 4vh",
-          animation: "fadeSlideUp 1s ease-out 0.7s both",
-        }}>
-          Конкурс музыкальных коллективов
-        </p>
 
         {/* Year pill */}
         <div style={{
